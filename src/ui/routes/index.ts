@@ -1,27 +1,20 @@
 import Home from '../screen/Home/index.svelte'
+import About from '../screen/About/index.svelte'
+import Projects from '../screen/Project/index.svelte'
 
 const routes = [
   {
     name: '/',
     component: Home,
   },
-  // { name: 'login', component: Login, layout: PublicLayout },
-  // {
-  //   name: 'admin',
-  //   component: AdminLayout,
-  //   onlyIf: { guard: userIsAdmin, redirect: '/login' },
-  //   nestedRoutes: [
-  //     { name: 'index', component: AdminIndex },
-  //     {
-  //       name: 'employees',
-  //       component: '',
-  //       nestedRoutes: [
-  //         { name: 'index', component: EmployeesIndex },
-  //         { name: 'show/:id', component: EmployeesShow },
-  //       ],
-  //     },
-  //   ],
-  // },
+  {
+    name: 'about',
+    component: About,
+  },
+  {
+    name: 'projects',
+    component: Projects,
+  },
 ]
 
 export { routes }
