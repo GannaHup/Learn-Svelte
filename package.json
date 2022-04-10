@@ -6,7 +6,7 @@
     "tailwind": "postcss public/css/tailwind.css -o public/css/app.css -w",
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public --no-clear",
+    "start": "sirv public -s --port 8080 --no-clear",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
