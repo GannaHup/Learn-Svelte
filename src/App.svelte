@@ -1,14 +1,8 @@
-<script>
-  import { Router } from 'svelte-router-spa'
-  import { routes } from './ui/routes/index'
+<script lang="ts">
+  import MainLayout from '@/ui/layout/Main/index.svelte'
 </script>
 
-<div class="flex flex-row border border-red-500">
-  <div class="w-96 h-screen border border-black"></div>
-  <div class="w-full border border-blue-500">
-    <Router {routes} />
-  </div>
-</div>
+<MainLayout />
 
 <style lang="postcss" global>
   @tailwind base;

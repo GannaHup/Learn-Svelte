@@ -1,6 +1,5 @@
 <script lang="ts">
-  import Button from '../../components/Button/index.svelte'
-
+  import Button from '@/ui/components/Button/index.svelte'
 </script>
 
 <div>

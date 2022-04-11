@@ -15,7 +15,7 @@
   ]
 </script>
 
-<div>
+<div class="">
   <ul>
     {#each listMenu as menu}
       <li>{menu.label}</li>

@@ -1,6 +1,6 @@
-import Home from '../screen/Home/index.svelte'
-import About from '../screen/About/index.svelte'
-import Projects from '../screen/Project/index.svelte'
+import Home from '@/ui/screen/Home/index.svelte'
+import About from '@/ui/screen/About/index.svelte'
+import Projects from '@/ui/screen/Project/index.svelte'
 
 const routes = [
   {
