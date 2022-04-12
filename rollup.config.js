@@ -6,6 +6,10 @@ import { terser } from 'rollup-plugin-terser';
 import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
 import sveltePreprocess from 'svelte-preprocess';
+import alias from '@rollup/plugin-alias';
+import path from "path";
+
+const projectRootDir = path.resolve(__dirname);
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -54,6 +58,11 @@ export default {
 				dev: !production
 			}
 		}),
+		alias({
+      entries: [
+        { find: '@', replacement: path.resolve(projectRootDir, 'src') },
+      ]
+    }),
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
 		css({ output: 'bundle.css' }),
