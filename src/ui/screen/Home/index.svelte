@@ -1,5 +1,9 @@
 <script lang="ts">
   import Button from '@/ui/components/Button/index.svelte'
+
+  export let currentRoute;
+
+  console.log(currentRoute)
 </script>
 
 <div>

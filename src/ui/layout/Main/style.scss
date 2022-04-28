@@ -1,0 +1,16 @@
+.main-layout {
+  @apply flex;
+  @apply flex-row;
+
+  .sidebar {
+    @apply w-96;
+    @apply h-screen;
+  }
+  
+  .rightbar {
+    @apply w-full;
+
+    background-color: #040b14;
+    background-color: rgba(4, 11, 20, .4);
+  }
+}

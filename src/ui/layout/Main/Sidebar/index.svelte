@@ -1,7 +1,9 @@
 <script lang="ts">
+  import Icon from '@/ui/assets/icons/index.svelte'
+
   const listMenu = [
     {
-      label: 'Home',
+      label: `I'm Ganna`,
       value: '/',
     },
     {
@@ -10,18 +12,29 @@
     },
     {
       label: 'Projects',
-      value: '/project'
+      value: '/projects'
     }
   ]
 </script>
 
-<div class="">
-  <ul>
+<div class="wrapper-sidebar">
+  <div class="section-top">
+    <img
+      src="images/profile.jpg"
+      alt="Profile"
+      class="img-profile"
+    >
+  </div>
+  <ul class="list-menu">
     {#each listMenu as menu}
-      <li>{menu.label}</li>
+      <li>
+        <a href={menu.value} class="menu">
+          <Icon size="w-8 h-8" />
+          <span>{menu.label}</span>
+        </a>
+      </li>
     {/each}
   </ul>
-
 </div>
 
 <style src="./style.scss" scoped></style>

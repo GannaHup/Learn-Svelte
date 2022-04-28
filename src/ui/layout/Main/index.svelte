@@ -4,22 +4,13 @@
   import Sidebar from '@/ui/layout/Main/Sidebar/index.svelte'
 </script>
 
-<div class="flex flex-row border border-red-500">
-  <div class="w-96 h-screen border border-black">
+<div class="main-layout">
+  <div class="sidebar">
     <Sidebar />
   </div>
-  <div class="w-full border border-blue-500">
+  <div class="rightbar">
     <Router {routes} />
   </div>
 </div>
 
-<style lang="postcss" global>
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-
-  * {
-    padding: 0;
-    margin: 0;
-  }
-</style>
+<style src="./style.scss" scoped></style>
