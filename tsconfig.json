@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["svelte"],
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "alwaysStrict": true,
@@ -33,9 +34,7 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx",
+    "src/**/*.svelte",
     "src/main.ts"
   ],
   "extends": "@tsconfig/svelte/tsconfig.json",

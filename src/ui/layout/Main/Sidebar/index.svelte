@@ -15,6 +15,8 @@
       value: '/projects'
     }
   ]
+
+  export let currentPath = '/';
 </script>
 
 <div class="wrapper-sidebar">
@@ -28,7 +30,7 @@
   <ul class="list-menu">
     {#each listMenu as menu}
       <li>
-        <a href={menu.value} class="menu">
+        <a href={menu.value} class="menu" class:isActive={currentPath === menu.value}>
           <Icon size="w-8 h-8" />
           <span>{menu.label}</span>
         </a>

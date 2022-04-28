@@ -1,11 +1,9 @@
 <script lang="ts">
   import { Router } from 'svelte-router-spa'
-  import MainLayout from '@/ui/layout/Main/index.svelte'
   import { routes } from '@/ui/routes/index'
 </script>
 
 <div>
-  <MainLayout />
   <Router {routes} />
 </div>
 
